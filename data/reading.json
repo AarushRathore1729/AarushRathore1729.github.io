@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "type": "books",
+        "title": "The Art of Doing Science and Engineering",
+        "author": "Richard Hamming",
+        "rating": 5,
+        "dateRead": "2024-01-15",
+        "summary": "Hamming's reflections on how to do great work. Essential reading for anyone in research or engineering.",
+        "keyTakeaways": [
+            "You and your research - work on important problems",
+            "The importance of clear communication",
+            "Style vs substance in technical work"
+        ],
+        "link": "https://press.stripe.com/the-art-of-doing-science-and-engineering",
+        "tags": [
+            "research",
+            "engineering",
+            "career"
+        ]
+    },
+    {
+        "id": 2,
+        "type": "books",
+        "title": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "rating": 5,
+        "dateRead": "2023-11-20",
+        "summary": "A masterful exploration of the two systems that drive the way we think - the fast, intuitive System 1 and the slow, deliberate System 2.",
+        "keyTakeaways": [
+            "Cognitive biases affect everyone",
+            "The difference between experiencing and remembering selves",
+            "When to trust your intuition"
+        ],
+        "tags": [
+            "psychology",
+            "decision-making"
+        ]
+    },
+    {
+        "id": 3,
+        "type": "notes",
+        "title": "Notes on Deep Learning Optimization",
+        "dateCreated": "2024-02-10",
+        "summary": "Collected notes on optimization techniques in deep learning, including Adam, learning rate schedules, and weight decay.",
+        "content": "Key insights from recent papers on optimizer design...",
+        "tags": [
+            "machine-learning",
+            "optimization"
+        ]
+    },
+    {
+        "id": 4,
+        "type": "ideas",
+        "title": "Knowledge Graphs for Personal Learning",
+        "dateCreated": "2024-03-05",
+        "summary": "How building a personal knowledge graph can accelerate learning and surface unexpected connections between ideas.",
+        "content": "The idea is to create a network of concepts...",
+        "tags": [
+            "learning",
+            "tools-for-thought"
+        ]
+    },
+    {
+        "id": 5,
+        "type": "books",
+        "title": "How to Take Smart Notes",
+        "author": "Sönke Ahrens",
+        "rating": 4,
+        "dateRead": "2023-09-01",
+        "summary": "An introduction to the Zettelkasten method for note-taking and knowledge management.",
+        "keyTakeaways": [
+            "Write notes in your own words",
+            "Connect new ideas to existing ones",
+            "Let structure emerge from notes"
+        ],
+        "tags": [
+            "productivity",
+            "note-taking"
+        ]
+    }
+]

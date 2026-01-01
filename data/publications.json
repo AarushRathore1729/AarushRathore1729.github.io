@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Example Publication Title: A Study of Something Interesting",
+        "authors": "Your Name, Co-Author One, Co-Author Two",
+        "venue": "Proceedings of the International Conference on Example Topics (ICET 2024)",
+        "year": 2024,
+        "doi": "10.1234/example.2024.001",
+        "pdf": "assets/files/paper1.pdf",
+        "code": "https://github.com/yourusername/example-repo",
+        "abstract": "This is an example abstract describing your research."
+    },
+    {
+        "id": 2,
+        "title": "Another Great Paper: Methods and Results",
+        "authors": "Your Name, Another Collaborator",
+        "venue": "Journal of Example Research, Vol. 42, Issue 3",
+        "year": 2023,
+        "doi": "10.1234/example.2023.042",
+        "pdf": "assets/files/paper2.pdf",
+        "abstract": "Another example abstract for demonstration purposes."
+    },
+    {
+        "id": 3,
+        "title": "Early Work on Foundational Concepts",
+        "authors": "Your Name",
+        "venue": "Workshop on Emerging Topics (WET 2022)",
+        "year": 2022,
+        "pdf": "assets/files/paper3.pdf",
+        "slides": "assets/files/slides1.pdf"
+    }
+]

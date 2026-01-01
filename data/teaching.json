@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "code": "CS 101",
+        "title": "Introduction to Computer Science",
+        "term": "Fall",
+        "year": 2024,
+        "role": "Instructor",
+        "description": "Introductory course covering fundamental concepts in computer science including algorithms, data structures, and programming basics.",
+        "syllabus": "assets/files/cs101-syllabus.pdf"
+    },
+    {
+        "id": 2,
+        "code": "CS 501",
+        "title": "Advanced Topics in Machine Learning",
+        "term": "Spring",
+        "year": 2024,
+        "role": "Co-Instructor",
+        "description": "Graduate-level course exploring cutting-edge research in machine learning, including deep learning, reinforcement learning, and more."
+    },
+    {
+        "id": 3,
+        "code": "CS 201",
+        "title": "Data Structures and Algorithms",
+        "term": "Fall",
+        "year": 2023,
+        "role": "Teaching Assistant",
+        "description": "Core undergraduate course on fundamental data structures and algorithm design and analysis."
+    }
+]

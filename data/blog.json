@@ -1,0 +1,39 @@
+[
+    {
+        "id": "welcome-post",
+        "title": "Welcome to My Blog",
+        "date": "2024-01-15",
+        "excerpt": "An introduction to this blog and what I plan to share here about research, academia, and more.",
+        "image": "assets/images/blog1.jpg",
+        "content": "Welcome to my academic blog! I'll be sharing thoughts on research, tutorials, and insights from my journey in academia. Stay tuned for more posts.",
+        "tags": [
+            "Introduction",
+            "Academia"
+        ]
+    },
+    {
+        "id": "research-tips",
+        "title": "Tips for New Researchers",
+        "date": "2024-02-20",
+        "excerpt": "Lessons I've learned during my research journey that I wish I knew when starting out.",
+        "image": "assets/images/blog2.jpg",
+        "content": "Starting in research can be daunting. Here are some tips I've gathered over the years...",
+        "tags": [
+            "Research",
+            "Tips",
+            "Career"
+        ]
+    },
+    {
+        "id": "conference-experience",
+        "title": "My First Major Conference",
+        "date": "2024-03-10",
+        "excerpt": "Reflections on attending and presenting at my first major international conference.",
+        "image": "assets/images/blog3.jpg",
+        "content": "Last month, I had the opportunity to present our work at [Conference Name]. Here's what I learned...",
+        "tags": [
+            "Conference",
+            "Experience"
+        ]
+    }
+]

@@ -1,0 +1,17 @@
+{
+    "name": "Your Name",
+    "title": "PhD Student / Researcher / Professor",
+    "bio": "Short biography about yourself and your research interests. Describe what drives your work and what you're passionate about.",
+    "photo": "assets/images/profile.jpg",
+    "institution": "Your University",
+    "location": "City, Country",
+    "email": "you@example.com",
+    "aboutDetailed": "Welcome to my academic website! I am a researcher at [Institution] working on [research areas]. My work focuses on [specific topics]. Feel free to explore my publications, talks, and other work.",
+    "socialLinks": {
+        "googleScholar": "https://scholar.google.com/citations?user=YOURPROFILE",
+        "orcid": "https://orcid.org/0000-0000-0000-0000",
+        "github": "https://github.com/yourusername",
+        "linkedin": "https://linkedin.com/in/yourusername",
+        "twitter": "https://twitter.com/yourusername"
+    }
+}

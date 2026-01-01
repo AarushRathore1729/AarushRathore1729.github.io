@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Project Alpha",
+        "description": "A groundbreaking project that demonstrates innovative approaches to solving complex problems in our field.",
+        "image": "assets/images/project1.jpg",
+        "link": "https://github.com/yourusername/project-alpha",
+        "tags": [
+            "Machine Learning",
+            "Python",
+            "Research"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Open Source Tool",
+        "description": "A widely-used open source tool that helps researchers process and analyze data more efficiently.",
+        "image": "assets/images/project2.jpg",
+        "link": "https://github.com/yourusername/open-source-tool",
+        "tags": [
+            "Open Source",
+            "Data Analysis",
+            "JavaScript"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Research Dashboard",
+        "description": "An interactive visualization dashboard for exploring research data and findings.",
+        "image": "assets/images/project3.jpg",
+        "link": "https://yourusername.github.io/dashboard",
+        "tags": [
+            "Visualization",
+            "D3.js",
+            "Web Development"
+        ]
+    }
+]
