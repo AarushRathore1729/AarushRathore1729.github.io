@@ -1,17 +1,17 @@
 {
-    "name": "Your Name",
-    "title": "PhD Student / Researcher / Professor",
-    "bio": "Short biography about yourself and your research interests. Describe what drives your work and what you're passionate about.",
+    "name": "Dr. Jane Smith",
+    "title": "Assistant Professor of Computer Science",
+    "bio": "Researcher in machine learning and artificial intelligence, focused on developing interpretable AI systems for healthcare applications.",
     "photo": "assets/images/profile.jpg",
-    "institution": "Your University",
-    "location": "City, Country",
-    "email": "you@example.com",
-    "aboutDetailed": "Welcome to my academic website! I am a researcher at [Institution] working on [research areas]. My work focuses on [specific topics]. Feel free to explore my publications, talks, and other work.",
+    "institution": "Stanford University",
+    "location": "Stanford, California",
+    "email": "jsmith@stanford.edu",
+    "aboutDetailed": "Welcome to my academic website! I am an Assistant Professor at Stanford University working on machine learning and artificial intelligence. My research focuses on developing interpretable AI systems, particularly for healthcare applications. I completed my PhD at MIT and have published extensively in top-tier venues including NeurIPS, ICML, and Nature Medicine.",
     "socialLinks": {
-        "googleScholar": "https://scholar.google.com/citations?user=YOURPROFILE",
-        "orcid": "https://orcid.org/0000-0000-0000-0000",
-        "github": "https://github.com/yourusername",
-        "linkedin": "https://linkedin.com/in/yourusername",
-        "twitter": "https://twitter.com/yourusername"
+        "googleScholar": "https://scholar.google.com/citations?user=example",
+        "orcid": "https://orcid.org/0000-0001-2345-6789",
+        "github": "https://github.com/janesmith",
+        "linkedin": "https://linkedin.com/in/drjanesmith",
+        "twitter": "https://twitter.com/drjanesmith"
     }
 }

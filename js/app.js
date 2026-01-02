@@ -49,7 +49,7 @@ class AcademicSite {
 
         for (const file of dataFiles) {
             try {
-                const response = await fetch(`data/${file}.json`);
+                const response = await fetch(`data / ${file}.json`);
                 if (response.ok) {
                     this.data[file] = await response.json();
                 } else {
@@ -57,7 +57,7 @@ class AcademicSite {
                     this.data[file] = this.getDefaultData(file);
                 }
             } catch (error) {
-                console.warn(`Error loading ${file}.json:`, error);
+                console.warn(`Error loading ${file}.json: `, error);
                 this.data[file] = this.getDefaultData(file);
             }
         }
@@ -176,7 +176,7 @@ class AcademicSite {
         const emailEl = document.getElementById('info-email');
         if (emailEl && profile.email) {
             const link = emailEl.querySelector('a');
-            link.href = `mailto:${profile.email}`;
+            link.href = `mailto:${profile.email} `;
             link.textContent = profile.email;
         }
 
@@ -212,7 +212,7 @@ class AcademicSite {
                 link.title = iconMap[key].title;
                 link.target = '_blank';
                 link.rel = 'noopener noreferrer';
-                link.innerHTML = `<i class="${iconMap[key].icon}"></i>`;
+                link.innerHTML = `< i class="${iconMap[key].icon}" ></i > `;
                 container.appendChild(link);
             }
         }
@@ -235,7 +235,7 @@ class AcademicSite {
         const count = this.data.publications?.length || 0;
         const el = document.getElementById('pub-count');
         if (el) {
-            el.textContent = `${count}+ peer-reviewed papers`;
+            el.textContent = `${count} + peer - reviewed papers`;
         }
     }
 
@@ -253,7 +253,7 @@ class AcademicSite {
         const filterSelect = document.getElementById('pub-filter');
         filterSelect.innerHTML = '<option value="all">All Years</option>';
         years.forEach(year => {
-            filterSelect.innerHTML += `<option value="${year}">${year}</option>`;
+            filterSelect.innerHTML += `< option value = "${year}" > ${year}</option > `;
         });
 
         // Setup search and filter
@@ -283,20 +283,20 @@ class AcademicSite {
 
     getPublicationCard(pub) {
         const links = [];
-        if (pub.pdf) links.push(`<a href="${pub.pdf}" class="pub-link" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>`);
-        if (pub.doi) links.push(`<a href="https://doi.org/${pub.doi}" class="pub-link" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>`);
-        if (pub.code) links.push(`<a href="${pub.code}" class="pub-link" target="_blank"><i class="fab fa-github"></i> Code</a>`);
-        if (pub.slides) links.push(`<a href="${pub.slides}" class="pub-link" target="_blank"><i class="fas fa-desktop"></i> Slides</a>`);
+        if (pub.pdf) links.push(`< a href = "${pub.pdf}" class="pub-link" target = "_blank" > <i class="fas fa-file-pdf"></i> PDF</a > `);
+        if (pub.doi) links.push(`< a href = "https://doi.org/${pub.doi}" class="pub-link" target = "_blank" > <i class="fas fa-external-link-alt"></i> DOI</a > `);
+        if (pub.code) links.push(`< a href = "${pub.code}" class="pub-link" target = "_blank" > <i class="fab fa-github"></i> Code</a > `);
+        if (pub.slides) links.push(`< a href = "${pub.slides}" class="pub-link" target = "_blank" > <i class="fas fa-desktop"></i> Slides</a > `);
 
         return `
-            <div class="publication-card">
+    < div class="publication-card" >
                 <span class="publication-year">${pub.year}</span>
                 <h3 class="publication-title">${pub.title}</h3>
                 <p class="publication-authors">${pub.authors}</p>
                 ${pub.venue ? `<p class="publication-venue">${pub.venue}</p>` : ''}
                 ${links.length > 0 ? `<div class="publication-links">${links.join('')}</div>` : ''}
-            </div>
-        `;
+            </div >
+    `;
     }
 
     renderReading() {
@@ -342,29 +342,30 @@ class AcademicSite {
     getReadingCard(item) {
         const stars = item.rating ? '★'.repeat(item.rating) + '☆'.repeat(5 - item.rating) : '';
         const takeaways = item.keyTakeaways ? `
-            <div class="reading-takeaways">
+    < div class="reading-takeaways" >
                 <div class="reading-takeaways-title">Key Takeaways</div>
                 <ul>${item.keyTakeaways.map(t => `<li>${t}</li>`).join('')}</ul>
-            </div>
-        ` : '';
+            </div >
+    ` : '';
 
         return `
-            <div class="reading-card" ${item.link ? `onclick="window.open('${item.link}', '_blank')"` : ''}>
+    < div class="reading-card" ${item.link ? `onclick="window.open('${item.link}', '_blank')"` : ''}>
                 <div class="reading-card-header">
                     <span class="reading-type ${item.type}">${item.type}</span>
                     ${stars ? `<span class="reading-rating">${stars}</span>` : ''}
                 </div>
                 <h3 class="reading-title">${item.title}</h3>
                 ${item.author ? `<p class="reading-author">by ${item.author}</p>` : ''}
-                <p class="reading-summary">${item.summary}</p>
+<p class="reading-summary">${item.summary}</p>
                 ${takeaways}
                 ${item.tags ? `
                     <div class="reading-tags">
                         ${item.tags.map(tag => `<span class="reading-tag">${tag}</span>`).join('')}
                     </div>
-                ` : ''}
-            </div>
-        `;
+                ` : ''
+            }
+            </div >
+    `;
     }
 
     renderTeaching() {
@@ -377,13 +378,13 @@ class AcademicSite {
         }
 
         container.innerHTML = courses.map(course => `
-            <div class="course-card">
-                ${course.code ? `<span class="course-code">${course.code}</span>` : ''}
+    < div class="course-card" >
+        ${course.code ? `<span class="course-code">${course.code}</span>` : ''}
                 <h3 class="course-title">${course.title}</h3>
                 <p class="course-term">${course.term} ${course.year || ''}</p>
                 ${course.description ? `<p class="course-description">${course.description}</p>` : ''}
-            </div>
-        `).join('');
+            </div >
+    `).join('');
     }
 
     renderPortfolio() {
@@ -396,19 +397,19 @@ class AcademicSite {
         }
 
         container.innerHTML = projects.map(project => `
-            <div class="portfolio-card" ${project.link ? `onclick="window.open('${project.link}', '_blank')"` : ''}>
-                ${project.image ? `<img src="${project.image}" alt="${project.title}" class="portfolio-image">` : ''}
-                <div class="portfolio-content">
-                    <h3 class="portfolio-title">${project.title}</h3>
-                    <p class="portfolio-description">${project.description}</p>
-                    ${project.tags ? `
+    < div class="portfolio-card" ${project.link ? `onclick="window.open('${project.link}', '_blank')"` : ''}>
+        ${project.image ? `<img src="${project.image}" alt="${project.title}" class="portfolio-image">` : ''}
+<div class="portfolio-content">
+    <h3 class="portfolio-title">${project.title}</h3>
+    <p class="portfolio-description">${project.description}</p>
+    ${project.tags ? `
                         <div class="portfolio-tags">
                             ${project.tags.map(tag => `<span class="portfolio-tag">${tag}</span>`).join('')}
                         </div>
                     ` : ''}
-                </div>
-            </div>
-        `).join('');
+</div>
+            </div >
+    `).join('');
     }
 
     renderBlog() {
@@ -421,15 +422,15 @@ class AcademicSite {
         }
 
         container.innerHTML = posts.map(post => `
-            <div class="blog-card" onclick="window.location.hash='blog-${post.id}'">
-                ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-image">` : ''}
-                <div class="blog-content">
-                    <div class="blog-date">${this.formatDate(post.date)}</div>
-                    <h3 class="blog-title">${post.title}</h3>
-                    <p class="blog-excerpt">${post.excerpt}</p>
-                </div>
-            </div>
-        `).join('');
+    < div class="blog-card" onclick = "window.location.hash='blog-${post.id}'" >
+        ${post.image ? `<img src="${post.image}" alt="${post.title}" class="blog-image">` : ''}
+<div class="blog-content">
+    <div class="blog-date">${this.formatDate(post.date)}</div>
+    <h3 class="blog-title">${post.title}</h3>
+    <p class="blog-excerpt">${post.excerpt}</p>
+</div>
+            </div >
+    `).join('');
     }
 
     renderCV() {
@@ -441,8 +442,8 @@ class AcademicSite {
         // Education
         if (cv.education && cv.education.length > 0) {
             html += `
-                <div class="cv-section">
-                    <h3 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+    < div class="cv-section" >
+        <h3 class="cv-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
                     ${cv.education.map(edu => `
                         <div class="cv-item">
                             <div class="cv-item-header">
@@ -452,16 +453,17 @@ class AcademicSite {
                             <div class="cv-item-subtitle">${edu.institution}</div>
                             ${edu.description ? `<div class="cv-item-description">${edu.description}</div>` : ''}
                         </div>
-                    `).join('')}
-                </div>
-            `;
+                    `).join('')
+                }
+                </div >
+    `;
         }
 
         // Experience
         if (cv.experience && cv.experience.length > 0) {
             html += `
-                <div class="cv-section">
-                    <h3 class="cv-section-title"><i class="fas fa-briefcase"></i> Experience</h3>
+    < div class="cv-section" >
+        <h3 class="cv-section-title"><i class="fas fa-briefcase"></i> Experience</h3>
                     ${cv.experience.map(exp => `
                         <div class="cv-item">
                             <div class="cv-item-header">
@@ -471,28 +473,29 @@ class AcademicSite {
                             <div class="cv-item-subtitle">${exp.organization}</div>
                             ${exp.description ? `<div class="cv-item-description">${exp.description}</div>` : ''}
                         </div>
-                    `).join('')}
-                </div>
-            `;
+                    `).join('')
+                }
+                </div >
+    `;
         }
 
         // Skills
         if (cv.skills && cv.skills.length > 0) {
             html += `
-                <div class="cv-section">
+    < div class="cv-section" >
                     <h3 class="cv-section-title"><i class="fas fa-tools"></i> Skills</h3>
                     <div class="cv-skills">
                         ${cv.skills.map(skill => `<span class="cv-skill">${skill}</span>`).join('')}
                     </div>
-                </div>
-            `;
+                </div >
+    `;
         }
 
         // Awards
         if (cv.awards && cv.awards.length > 0) {
             html += `
-                <div class="cv-section">
-                    <h3 class="cv-section-title"><i class="fas fa-award"></i> Awards & Honors</h3>
+    < div class="cv-section" >
+        <h3 class="cv-section-title"><i class="fas fa-award"></i> Awards & Honors</h3>
                     ${cv.awards.map(award => `
                         <div class="cv-item">
                             <div class="cv-item-header">
@@ -501,9 +504,10 @@ class AcademicSite {
                             </div>
                             ${award.organization ? `<div class="cv-item-subtitle">${award.organization}</div>` : ''}
                         </div>
-                    `).join('')}
-                </div>
-            `;
+                    `).join('')
+                }
+                </div >
+    `;
         }
 
         if (!html) {
@@ -533,11 +537,11 @@ class AcademicSite {
 
     getEmptyState(icon, message) {
         return `
-            <div class="empty-state">
+    < div class="empty-state" >
                 <i class="fas fa-${icon}"></i>
                 <p>${message}</p>
-            </div>
-        `;
+            </div >
+    `;
     }
 }
 
