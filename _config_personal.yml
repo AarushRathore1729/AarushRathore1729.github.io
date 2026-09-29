@@ -1,0 +1,22 @@
+title: Aarush Rathore
+first_name: Aarush
+last_name: Rathore
+contact_note: >
+  Feel free to reach out through GitHub for research, engineering, or collaboration.
+description: >
+  Aarush Rathore — ECE undergraduate at BITS Pilani, Goa, working on machine learning systems,
+  language models, efficient inference, and applied AI.
+keywords: machine learning, ML systems, language models, efficient inference, research, BITS Pilani
+icon: 🧠
+
+# This repository is currently a project-site repository under the
+# AarushRathore1729 GitHub account.
+url: https://aarushrathore1729.github.io
+baseurl: /aarush1729.github.io
+
+blog_name: notes
+blog_description: Notes on machine learning, systems, and research.
+
+scholar:
+  last_name: [Rathore]
+  first_name: [Aarush, A.]
