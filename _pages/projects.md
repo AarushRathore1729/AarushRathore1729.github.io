@@ -5,7 +5,7 @@ permalink: /projects/
 description: Selected research and engineering work in machine learning and systems.
 nav: true
 nav_order: 3
-display_categories: [research, systems, applied-ai]
+display_categories: [research, systems]
 horizontal: false
 ---
 
