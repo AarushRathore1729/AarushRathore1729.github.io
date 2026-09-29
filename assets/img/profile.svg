@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Aarush Rathore</title>
+  <desc id="desc">Minimal initials avatar with the letters AR.</desc>
+  <rect width="400" height="400" rx="64" fill="#111827"/>
+  <circle cx="200" cy="200" r="132" fill="#1f2937"/>
+  <text x="200" y="226" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="128" font-weight="700" fill="#f9fafb">AR</text>
+</svg>
