@@ -9,10 +9,9 @@ description: >
 keywords: machine learning, ML systems, language models, efficient inference, research, BITS Pilani
 icon: 🧠
 
-# This repository is currently a project-site repository under the
-# AarushRathore1729 GitHub account.
+# Root GitHub Pages site for the AarushRathore1729 account.
 url: https://aarushrathore1729.github.io
-baseurl: /aarush1729.github.io
+baseurl: ""
 
 blog_name: notes
 blog_description: Notes on machine learning, systems, and research.
