@@ -1,14 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - AarushRathore1729
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - AarushRathore1729/dlm_ar_final
+  - AarushRathore1729/Simplismart_Assign
+  - AarushRathore1729/URL-Shorten
